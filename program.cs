@@ -12,10 +12,11 @@ namespace PracticeCalculator
             Console.WriteLine("Choose one of the options below:\n");
             Console.WriteLine("1 = Scientific");
             Console.WriteLine("2 = Length");
-            Console.WriteLine("3 = Exit\n");
+            Console.WriteLine("3 = Volume");
+            Console.WriteLine("4 = Exit\n");
             int MainMenuChoice = Convert.ToInt16(Console.ReadLine());
 
-            if (MainMenuChoice == 3)
+            if (MainMenuChoice == 4)
             {
                 Console.WriteLine("Exiting Application");
             }
@@ -31,6 +32,82 @@ namespace PracticeCalculator
                     Console.WriteLine("Proceeding to the Length Calculator...");
                     length();
                     break;
+
+                case 3:
+                    Console.WriteLine("Proceeding to the Volume Calculator Calculator...");
+                    volume();
+                    break;
+            }
+        }
+
+        public static void volume()
+        {
+            Console.WriteLine("Welcome To The Volume Calculator!\n");
+            
+            while(true)
+            {
+                double cubicmeters;
+                double litres;
+                double cubicinches;
+                double cubiccentimeters;
+                double cubicfeet;
+                double gallonsUS;
+                double gallonsUK;
+                double fluidouncesUS;
+                double milimetres;
+                double fluidouncesUK;
+                double teaspoonsUS;
+                double tablespoonsUS;
+                double cubicyards;
+                double answer;
+
+                Console.WriteLine("Please choose one by entering the number for the desired conersion/calculation\n");
+                Console.WriteLine("1 = Cubic metres to litres");
+                Console.WriteLine("2 = Litres to Cubic metres");
+                Console.WriteLine("3 = Cubic inches to Cubic centimetres");
+                Console.WriteLine("4 = Cubic centimetres to Cubic inches");
+                Console.WriteLine("5 = Cubic feet to Cubic metres");
+                Console.WriteLine("6 = Cubic metres to Cubic feet");
+                Console.WriteLine("7 = Gallons(US) to litres");
+                Console.WriteLine("8 = Litres to Gallons(US)");
+                Console.WriteLine("9 = Gallons(UK) to litres");
+                Console.WriteLine("10 = Litres to Gallons(UK)");
+                Console.WriteLine("11 = Fluid Ounces(US) to milimetres");
+                Console.WriteLine("12 = Milimetres to Fluid Ounces(US)");
+                Console.WriteLine("13 = Fluid Ounces(UK) to milimetres");
+                Console.WriteLine("14 = Milimetres to Fluid Ounces(UK)");
+                Console.WriteLine("15 = Teaspoons(US) to milimetres");
+                Console.WriteLine("16 = Milimetres to Teaspoons(US)");
+                Console.WriteLine("17 = Tablespoons(US) to Milimetres");
+                Console.WriteLine("18 = Milimetres to tablespoons");
+                Console.WriteLine("19 = Cubic yards to cubic metres");
+                Console.WriteLine("20 = Cubic metres to Cubic yards");
+                Console.WriteLine("21 = Return back to main menu");
+                Console.WriteLine("22 = Exit\n");
+                Console.WriteLine("Please enter your choice");
+
+                int MenuChoice = Convert.ToInt16(Console.ReadLine());
+
+                if(MenuChoice == 22)
+                {
+                    Console.WriteLine("Exiting the application");
+                }
+
+                switch(MenuChoice)
+                {
+                    case 1:
+                        Console.WriteLine("Enter the amount of cubic metres that are to be converted to litres");
+                        cubicmeters = Convert.ToInt16(Console.ReadLine());
+                        litres = cubicmeters * 1000;
+                        Console.WriteLine(cubicmeters + "cubic metres is " + litres + "litres");
+                        break;
+                    case 2:
+                        Console.WriteLine("Enter the amount of litres that are to be converted to cubic metres");
+                        litres = Convert.ToInt16(Console.ReadLine());
+                        cubicmeters = length / 1000;
+                        Console.WriteLine(cubicmeters + "cubic metres is " + litres + "litres");
+                        break;
+                }
             }
         }
 
