@@ -105,7 +105,7 @@ namespace PracticeCalculator
                         Console.WriteLine("Enter the amount of litres that are to be converted to cubic metres");
                         litres = Convert.ToInt16(Console.ReadLine());
                         cubicmeters = length / 1000;
-                        Console.WriteLine(cubicmeters + "cubic metres is " + litres + "litres");
+                        Console.WriteLine(litres + "litres is " + cubicmeters + "cubicmetres");
                         break;
                 }
             }
