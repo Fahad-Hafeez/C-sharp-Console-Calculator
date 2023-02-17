@@ -107,6 +107,18 @@ namespace PracticeCalculator
                         cubicmeters = length / 1000;
                         Console.WriteLine(litres + "litres is " + cubicmeters + "cubicmetres");
                         break;
+                    case 3:
+                        Console.WriteLine("Enter the amount cubic inches to be converted cubic centimetres");
+                        cubicinches = Convert.ToInt16(Console.ReadLine());
+                        cubiccentimeters = cubicinches * 16.387064;
+                        Console.WriteLine(cubiccentimeters + "cubic centimetres");
+                        break;
+                    case 4:
+                        Console.WriteLine("Enter the amount cubic centimetres to be converted cubic inches");
+                        cubiccentimeters = Convert.ToInt16(Console.ReadLine());
+                        cubicinches = cubiccentimeters / 16.387064;
+                        Console.WriteLine(cubicinches + "cubic inches");
+                        break;
                 }
             }
         }
