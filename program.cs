@@ -108,109 +108,109 @@ namespace PracticeCalculator
                         Console.WriteLine(litres + "litres is " + cubicmeters + "cubicmetres");
                         break;
                     case 3:
-                        Console.WriteLine("Enter the amount cubic inches to be converted cubic centimetres");
+                        Console.WriteLine("Enter the amount of cubic inches to be converted to cubic centimetres");
                         cubicinches = Convert.ToInt16(Console.ReadLine());
                         cubiccentimeters = cubicinches * 16.387064;
                         Console.WriteLine(cubiccentimeters + "cubic centimetres");
                         break;
                     case 4:
-                        Console.WriteLine("Enter the amount cubic centimetres to be converted cubic inches");
+                        Console.WriteLine("Enter the amount of cubic centimetres to be converted to cubic inches");
                         cubiccentimeters = Convert.ToInt16(Console.ReadLine());
                         cubicinches = cubiccentimeters / 16.387064;
                         Console.WriteLine(cubicinches + "cubic inches");
                         break;
                     case 5:
-                        Console.WriteLine("Enter the amount cubic feet to be converted cubic metres");
+                        Console.WriteLine("Enter the amount of cubic feet to be converted to cubic metres");
                         cubicfeet = Convert.ToInt16(Console.ReadLine());
                         cubicmeters = cubicfeet * 0.0283168466;
                         Console.WriteLine(cubicmeters + "cubic metres");
                         break;
                     case 6:
-                        Console.WriteLine("Enter the amount cubic metre to be converted cubic feet");
+                        Console.WriteLine("Enter the amount of cubic metre to be converted to cubic feet");
                         cubicmeters = Convert.ToInt16(Console.ReadLine());
                         cubicfeet = cubicmeters / 0.0283168466;
                         Console.WriteLine(cubicmeters + "cubic metres");
                         break;
                     case 7:
-                        Console.WriteLine("Enter the amount Gallons(US) to be converted litres");
+                        Console.WriteLine("Enter the amount of Gallons(US) to be converted to litres");
                         gallonsUS = Convert.ToInt16(Console.ReadLine());
                         litres = gallonsUS / 3.78541178;
                         Console.WriteLine(litres + "litres");
                         break;
                     case 8:
-                        Console.WriteLine("Enter the amount litres to be converted Gallons(US)");
+                        Console.WriteLine("Enter the amount of litres to be converted to Gallons(US)");
                         litres = Convert.ToInt16(Console.ReadLine());
                         gallonsUS = litres * 3.78541178;
                         Console.WriteLine(gallonsUS + "Gallons(US)");
                         break;
                     case 9:
-                        Console.WriteLine("Enter the amount Gallons(UK) to be converted litres");
+                        Console.WriteLine("Enter the amount of Gallons(UK) to be converted to litres");
                         gallonsUK = Convert.ToInt16(Console.ReadLine());
                         litres = gallonsUK * 4.54609;
                         Console.WriteLine(litres + "litres");
                         break;
                     case 10:
-                        Console.WriteLine("Enter the amount litres to be converted Gallons(UK)");
+                        Console.WriteLine("Enter the amount of litres to be converted to Gallons(UK)");
                         litres = Convert.ToInt16(Console.ReadLine());
                         gallonsUK = litres / 4.54609;
                         Console.WriteLine(gallonsUK + "Gallons(UK)");
                         break;
                     case 11:
-                        Console.WriteLine("Enter the amount fluid ounces(US) to be converted milimetres");
+                        Console.WriteLine("Enter the amount of fluid ounces(US) to be converted to milimetres");
                         fluidouncesUS = Convert.ToInt16(Console.ReadLine());
                         milimetres = fluidouncesUS * 29.5735;
                         Console.WriteLine(milimetres + "milimetres(mm)");
                         break;
                     case 12:
-                        Console.WriteLine("Enter the amount milimetres to be converted fluid ounces(US)");
+                        Console.WriteLine("Enter the amount of milimetres to be converted to fluid ounces(US)");
                         milimetres = Convert.ToInt16(Console.ReadLine());
                         fluidouncesUS = milimetres / 29.5735;
                         Console.WriteLine(fluidouncesUS + "fluid ounces(US)");
                         break;
                     case 13:
-                        Console.WriteLine("Enter the amount fluid ounces(UK) to be converted milimetres");
+                        Console.WriteLine("Enter the amount of fluid ounces(UK) to be converted to milimetres");
                         fluidouncesUK = Convert.ToInt16(Console.ReadLine());
                         milimetres = fluidouncesUK * 28.4131;
                         Console.WriteLine(milimetres + "milimetres(m)");
                         break;
                     case 14:
-                        Console.WriteLine("Enter the amount milimetres to be converted fluid ounces(UK)");
+                        Console.WriteLine("Enter the amount of milimetres to be converted to fluid ounces(UK)");
                         milimetres = Convert.ToInt16(Console.ReadLine());
                         fluidouncesUK = milimetres / 28.4131;
                         Console.WriteLine(fluidouncesUK + "fluid ounces(UK)");
                         break;
                     case 15:
-                        Console.WriteLine("Enter the amount teaspoons(US) to be converted milimetres");
+                        Console.WriteLine("Enter the amount of teaspoons(US) to be converted to milimetres");
                         teaspoonsUS = Convert.ToInt16(Console.ReadLine());
                         milimetres = teaspoonsUS * 4.92892;
                         Console.WriteLine(milimetres + "milimetres(m)");
                         break;
                     case 16:
-                        Console.WriteLine("Enter the amount milimetres to be converted teaspoons(US)");
+                        Console.WriteLine("Enter the amount of milimetres to be converted to teaspoons(US)");
                         milimetres = Convert.ToInt16(Console.ReadLine());
                         teaspoonsUS = milimetres / 4.92892;
                         Console.WriteLine(teaspoonsUS + "teaspoons(US)");
                         break;
                     case 17:
-                        Console.WriteLine("Enter the amount tablespoons(US) to be converted milimetres");
+                        Console.WriteLine("Enter the amount of tablespoons(US) to be converted to milimetres");
                         tablespoonsUS = Convert.ToInt16(Console.ReadLine);
                         milimetres = tablespoonsUS * 14.7868;
                         Console.WriteLine(milimetres + "milimetres(m)");
                         break;
                     case 18:
-                        Console.WriteLine("Enter the amount milimetres to be converted tablespoons(US)");
+                        Console.WriteLine("Enter the amount of milimetres to be converted to tablespoons(US)");
                         milimetres = Convert.ToInt16(Console.ReadLine);
                         tablespoonsUS = milimetres / 14.7868;
                         Console.WriteLine(tablespoonsUS + "tablespoons(US)");
                         break;
                     case 19:
-                        Console.WriteLine("Enter the amount cubic yards to be converted cubic metres");
+                        Console.WriteLine("Enter the amount of cubic yards to be converted to cubic metres");
                         cubicyards = Convert.ToInt16(Console.ReadLine);
                         cubicmeters = cubicyards * 0.76455485798;
                         Console.WriteLine(cubicmeters + "cubic metres");
                         break;
                     case 20:
-                        Console.WriteLine("Enter the amount cubic metres to be converted cubic yards");
+                        Console.WriteLine("Enter the amount of cubic metres to be converted to cubic yards");
                         cubicmeters = Convert.ToInt16(Console.ReadLine);
                         cubicyards = cubicmeters / 0.76455485798;
                         Console.WriteLine(cubicyards + "cubic yards");
