@@ -13,10 +13,11 @@ namespace PracticeCalculator
             Console.WriteLine("1 = Scientific");
             Console.WriteLine("2 = Length");
             Console.WriteLine("3 = Volume");
-            Console.WriteLine("4 = Exit\n");
+            Console.WriteLine("4 = Weight and Mass");
+            Console.WriteLine("5 = Exit\n");
             int MainMenuChoice = Convert.ToInt16(Console.ReadLine());
 
-            if (MainMenuChoice == 4)
+            if (MainMenuChoice == 5)
             {
                 Console.WriteLine("Exiting Application");
             }
@@ -24,7 +25,7 @@ namespace PracticeCalculator
             switch (MainMenuChoice)
             {
                 case 1:
-                    Console.WriteLine("Proceeding to the Sceintifc Calculator...");
+                    Console.WriteLine("Proceeding to the Scientifc Calculator...");
                     scientific();
                     break;
 
@@ -34,9 +35,43 @@ namespace PracticeCalculator
                     break;
 
                 case 3:
-                    Console.WriteLine("Proceeding to the Volume Calculator Calculator...");
+                    Console.WriteLine("Proceeding to the Volume Calculator...");
                     volume();
                     break;
+
+                case 4:
+                    Console.WriteLine("Proceeding to the Weight and Mass Calculator...");
+                    volume();
+                    break;
+            }
+        }
+
+        public static void weightnmass()
+        {
+            while(true)
+            {
+                Console.WriteLine("Welcome To The Volume Calculator!\n");
+
+                double kilogram;
+                double pound;
+                double ounce;
+                double gram;
+                double stone;
+                double ton;
+                double miligram;
+                double metricton;
+                double carat;  
+                double centigram;
+                double decigram;
+                double tryoounce;
+                double pennyweight;
+                double tolas;
+                double answer;
+
+                Console.WriteLine("Please choose one by entering the number for the desired conersion/calculation\n");
+                Console.WriteLine("1 = Kilograms to grams");
+                Console.WriteLine("2 = Kilograms to pounds");
+                Console.WriteLine("");
             }
         }
 
