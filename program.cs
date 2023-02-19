@@ -157,6 +157,146 @@ namespace PracticeCalculator
                         metricton = kilogram / 1000;
                         Console.WriteLine(metricton + "metric tons");
                         break;
+
+                    case 5:
+                        Console.WriteLine("Enter the amount of kilogram");
+                        kilogram = Convert.ToInt16(Console.ReadLine());
+                        carat = kilogram / 0.0002;
+                        Console.WriteLine(carat + "carats");
+                        break;
+
+                    case 6:
+                        Console.WriteLine("Enter the amount of kilogram");
+                        kilogram = Convert.ToInt16(Console.ReadLine());
+                        stone = kilogram / 6.35029318;
+                        Console.WriteLine(stone + "stones");
+                        break;
+
+                    case 7:
+                        Console.WriteLine("Enter the amount of pounds");
+                        pound = Convert.ToInt16(Console.ReadLine());
+                        ounce = pound * 16;
+                        Console.WriteLine(ounce + "ounces");
+                        break;
+
+                    case 8:
+                        Console.WriteLine("Enter the amount of pounds");
+                        pound = Convert.ToInt16(Console.ReadLine());
+                        gram = pound * 453.59237;
+                        Console.WriteLine(gram + "grams");
+                        break;
+
+                    case 9:
+                        Console.WriteLine("Enter the amount of pounds");
+                        pound = Convert.ToInt16(Console.ReadLine());
+                        kilogram = pound / 2.20462;
+                        Console.WriteLine(kilogram + "kilograms");
+                        break;
+
+                    case 10:
+                        Console.WriteLine("Enter the amount of pounds");
+                        pound = Convert.ToInt16(Console.ReadLine());
+                        stone = pound / 14;
+                        Console.WriteLine(stone + "stones");
+                        break;
+
+                    case 11:
+                        Console.WriteLine("Enter the amount of pounds");
+                        pound = Convert.ToInt16(Console.ReadLine());
+                        metricton = pound / 2204.62;
+                        Console.WriteLine(metricton + "metric tons");
+                        break;
+
+                    case 12:
+                        Console.WriteLine("Enter the amount of ounces");
+                        ounce = Convert.ToInt16(Console.ReadLine());
+                        gram = ounce * 28.34952;
+                        Console.WriteLine(gram + "grams");
+                        break;
+
+                    case 13:
+                        Console.WriteLine("Enter the amount of ounces");
+                        ounce = Convert.ToInt16(Console.ReadLine());
+                        pound = ounce / 16;
+                        Console.WriteLine(pound + "pounds");
+                        break;
+
+                    case 14:
+                        Console.WriteLine("Enter the amount of ounces");
+                        ounce = Convert.ToInt16(Console.ReadLine());
+                        kilogram = ounce / 35.274;
+                        Console.WriteLine(kilogram + "kilograms");
+                        break;
+
+                    case 15:
+                        Console.WriteLine("Enter the amount of grams");
+                        gram = Convert.ToInt16(Console.ReadLine());
+                        miligram = gram * 1000;
+                        Console.WriteLine(miligram + "miligrams");
+                        break;
+
+                    case 16:
+                        Console.WriteLine("Enter the amount of grams");
+                        gram = Convert.ToInt16(Console.ReadLine());
+                        centigram = gram * 100;
+                        Console.WriteLine(centigram + "centigrams");
+                        break;
+
+                    case 17:
+                        Console.WriteLine("Enter the amount of grams");
+                        gram = Convert.ToInt16(Console.ReadLine());
+                        decigram = gram * 10;
+                        Console.WriteLine(decigram + "decigrams");
+                        break;
+
+                    case 18:
+                        Console.WriteLine("Enter the amount of grams");
+                        gram = Convert.ToInt16(Console.ReadLine());
+                        kilogram = gram / 1000;
+                        Console.WriteLine(kilogram + "kilograms");
+                        break;
+
+                    case 19:
+                        Console.WriteLine("Enter the amount of grams");
+                        gram = Convert.ToInt16(Console.ReadLine());
+                        pound = gram / 453.59237;
+                        Console.WriteLine(pound + "pounds");
+                        break;
+
+                    case 20:
+                        Console.WriteLine("Enter the amount of grams");
+                        gram = Convert.ToInt16(Console.ReadLine());
+                        ounce = gram / 28.34952;
+                        Console.WriteLine(ounce + "ounces");
+                        break;
+
+                    case 21:
+                        Console.WriteLine("Enter the amount of grams");
+                        gram = Convert.ToInt16(Console.ReadLine());
+                        carat = gram / 0.2;
+                        Console.WriteLine(carat + "carat");
+                        break;
+
+                    case 22:
+                        Console.WriteLine("Enter the amount of metric tons");
+                        metricton = Convert.ToInt16(Console.ReadLine());
+                        kilogram = metricton * 1000;
+                        Console.WriteLine(kilogram + "kilograms");
+                        break;
+
+                    case 23:
+                        Console.WriteLine("Enter the amount of metric tons");
+                        metricton = Convert.ToInt16(Console.ReadLine());
+                        pound = metricton * 2204.62;
+                        Console.WriteLine(pound + "pounds");
+                        break;
+
+                    case 24:
+                        Console.WriteLine("Enter the amount of metric tons");
+                        metricton = Convert.ToInt16(Console.ReadLine());
+                        ounce = metricton * 35274;
+                        Console.WriteLine(ounce + "ounces");
+                        break;
                 }
             }
         }
