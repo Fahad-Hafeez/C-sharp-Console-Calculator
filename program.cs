@@ -170,7 +170,17 @@ namespace PracticeCalculator
 
                 if(MenuChoice == 91)
                 {
-                    Console.WriteLine("");
+                    Console.WriteLine("Exiting the application");
+                }
+
+                switch(MenuChoice)
+                {
+                    case 1:
+                        Console.WriteLine("Enter the amount of kilogram");
+                        kilogram = Convert.ToInt16(Console.ReadLine());
+                        gram = kiligram * 1000;
+                        Console.WriteLine(gram + "grams");
+                        break;
                 }
             }
         }
