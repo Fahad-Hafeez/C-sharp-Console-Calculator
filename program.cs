@@ -13,11 +13,12 @@ namespace PracticeCalculator
             Console.WriteLine("1 = Scientific");
             Console.WriteLine("2 = Length");
             Console.WriteLine("3 = Volume");
-            Console.WriteLine("4 = Weight and Mass");
-            Console.WriteLine("5 = Exit\n");
+            Console.WriteLine("4 = Weight");
+            Console.WriteLine("5 = Mass");
+            Console.WriteLine("6 = Exit\n");
             int MainMenuChoice = Convert.ToInt16(Console.ReadLine());
 
-            if (MainMenuChoice == 5)
+            if (MainMenuChoice == 6)
             {
                 Console.WriteLine("Exiting Application");
             }
@@ -40,17 +41,21 @@ namespace PracticeCalculator
                     break;
 
                 case 4:
-                    Console.WriteLine("Proceeding to the Weight and Mass Calculator...");
-                    volume();
+                    Console.WriteLine("Proceeding to the Weight Calculator...");
+                    weight();
+                    break;
+
+                case 5:
+                    Console.WriteLine("Proceeding to the Mass Calculator...");
+                    mass();
                     break;
             }
         }
-
-        public static void weightnmass()
+        public static void weight()
         {
-            while(true)
+            while (true)
             {
-                Console.WriteLine("Welcome To The Volume Calculator!\n");
+                Console.WriteLine("Welcome To The Weight Calculator!\n");
 
                 double kilogram;
                 double pound;
@@ -60,7 +65,7 @@ namespace PracticeCalculator
                 double ton;
                 double miligram;
                 double metricton;
-                double carat;  
+                double carat;
                 double centigram;
                 double decigram;
                 double tryoounce;
@@ -72,7 +77,6 @@ namespace PracticeCalculator
                 double microgram;
 
                 Console.WriteLine("Please choose one by entering the number for the desired conersion/calculation\n");
-                Console.WriteLine("Below are WEIGHT conversions/calculations\n");
                 Console.WriteLine("1 = Kilograms to grams");
                 Console.WriteLine("2 = Kilograms to pounds");
                 Console.WriteLine("3 = Kilograms to ounces");
@@ -114,73 +118,131 @@ namespace PracticeCalculator
                 Console.WriteLine("39 = Tolas to grams");
                 Console.WriteLine("40 = Tolas to ounces");
                 Console.WriteLine("41 = Tolas to pounds");
-                Console.WriteLine("Below are MASS conversions/calculations\n");
-                Console.WriteLine("42 = Kilogram to gram");
-                Console.WriteLine("43 = Kilogram to miligram");
-                Console.WriteLine("44 = Kilogram to microgram");
-                Console.WriteLine("45 = Kilogram to pound");
-                Console.WriteLine("46 = Kilogram to ounce");
-                Console.WriteLine("47 = Kilogram to stone");
-                Console.WriteLine("48 = Kilogram to tonne(metric ton)");
-                Console.WriteLine("49 = Gram to kilogram");
-                Console.WriteLine("50 = Gram to miligram");
-                Console.WriteLine("51 = Gram to microgram");
-                Console.WriteLine("52 = Gram to pound");
-                Console.WriteLine("53 = Gram to ounce");
-                Console.WriteLine("54 = Gram to grain");
-                Console.WriteLine("55 = Gram to carat");
-                Console.WriteLine("56 = Miligram to kilogram");
-                Console.WriteLine("57 = Miligram to gram");
-                Console.WriteLine("58 = Miligram to pound");
-                Console.WriteLine("59 = Miligram to ounce");
-                Console.WriteLine("60 = Miligram to grain");
-                Console.WriteLine("61 = Miligram to carat");
-                Console.WriteLine("62 = Microgram to kilogram");
-                Console.WriteLine("63 = Microgram to gram");
-                Console.WriteLine("64 = Microgram to miligram");
-                Console.WriteLine("65 = Microgram to pound");
-                Console.WriteLine("66 = Microgram to ounce");
-                Console.WriteLine("67 = Ounce to kilogram");
-                Console.WriteLine("68 = Ounce to gram");
-                Console.WriteLine("69 = Ounce to miligram");
-                Console.WriteLine("70 = Ounce to pound");
-                Console.WriteLine("71 = Ounce to grain");
-                Console.WriteLine("72 = Ounce to carat");
-                Console.WriteLine("73 = Pound to kilogram");
-                Console.WriteLine("74 = Pound to gram");
-                Console.WriteLine("75 = Pound to miligram");
-                Console.WriteLine("76 = Pound to microgram");
-                Console.WriteLine("77 = Pound to ounce");
-                Console.WriteLine("78 = Pound to stone");
-                Console.WriteLine("79 = Pound to tonne(metric ton)");
-                Console.WriteLine("80 = Stone to kilogram");
-                Console.WriteLine("81 = Stone to pound");
-                Console.WriteLine("82 = Tonne (metric ton) to kilogram");
-                Console.WriteLine("83 = Tonne (metric ton) to pound");
-                Console.WriteLine("84 = Grain to gram");
-                Console.WriteLine("85 = Grain to miligram");
-                Console.WriteLine("86 = Grain to ounce");
-                Console.WriteLine("87 = Carat to gram");
-                Console.WriteLine("88 = Carat to miligram");
-                Console.WriteLine("89 = Slug to kilogram\n");
-                Console.WriteLine("90 = Return back to main menu");
-                Console.WriteLine("91 = Exit\n");
+                Console.WriteLine("42 = Return back to main menu");
+                Console.WriteLine("43 = Exit\n");
 
                 int MenuChoice = Convert.ToInt16(Console.ReadLine());
 
-                if(MenuChoice == 91)
+                if (MenuChoice == 43)
                 {
                     Console.WriteLine("Exiting the application");
                 }
 
-                switch(MenuChoice)
+                switch (MenuChoice)
                 {
                     case 1:
                         Console.WriteLine("Enter the amount of kilogram");
                         kilogram = Convert.ToInt16(Console.ReadLine());
-                        gram = kiligram * 1000;
+                        gram = kilogram * 1000;
                         Console.WriteLine(gram + "grams");
                         break;
+
+                    case 2:
+                        Console.WriteLine("Enter the amount of kilogram");
+                        kilogram = Convert.ToInt16(Console.ReadLine());
+                        pound = kilogram * 2.20462;
+                        Console.WriteLine(pound + "pounds");
+                        break;
+
+                    case 3:
+                        Console.WriteLine("Enter the amount of kilogram");
+                        kilogram = Convert.ToInt16(Console.ReadLine());
+                        ounce = kilogram * 35.27396;
+                        Console.WriteLine(ounce + "ounces");
+                        break;
+
+                    case 4:
+                        Console.WriteLine("Enter the amount of kilogram");
+                        kilogram = Convert.ToInt16(Console.ReadLine());
+                        metricton = kilogram / 1000;
+                        Console.WriteLine(metricton + "metric tons");
+                        break;
+                }
+            }
+        }
+
+        public static void mass()
+        {
+            while (true)
+            {
+                Console.WriteLine("Welcome To The Mass Calculator!\n");
+
+                double kilogram;
+                double pound;
+                double ounce;
+                double gram;
+                double stone;
+                double ton;
+                double miligram;
+                double metricton;
+                double carat;
+                double centigram;
+                double decigram;
+                double tryoounce;
+                double pennyweight;
+                double tolas;
+                double answer;
+                double slug;
+                double tonne;
+                double microgram;
+
+                Console.WriteLine("Please choose one by entering the number for the desired conersion/calculation\n");
+                Console.WriteLine("1 = Kilogram to gram");
+                Console.WriteLine("2 = Kilogram to miligram");
+                Console.WriteLine("3 = Kilogram to microgram");
+                Console.WriteLine("4 = Kilogram to pound");
+                Console.WriteLine("5 = Kilogram to ounce");
+                Console.WriteLine("6 = Kilogram to stone");
+                Console.WriteLine("7 = Kilogram to tonne(metric ton)");
+                Console.WriteLine("8 = Gram to kilogram");
+                Console.WriteLine("9 = Gram to miligram");
+                Console.WriteLine("10 = Gram to microgram");
+                Console.WriteLine("11 = Gram to pound");
+                Console.WriteLine("12 = Gram to ounce");
+                Console.WriteLine("13 = Gram to grain");
+                Console.WriteLine("14 = Gram to carat");
+                Console.WriteLine("15 = Miligram to kilogram");
+                Console.WriteLine("16 = Miligram to gram");
+                Console.WriteLine("17 = Miligram to pound");
+                Console.WriteLine("18 = Miligram to ounce");
+                Console.WriteLine("19 = Miligram to grain");
+                Console.WriteLine("20 = Miligram to carat");
+                Console.WriteLine("21 = Microgram to kilogram");
+                Console.WriteLine("22 = Microgram to gram");
+                Console.WriteLine("23 = Microgram to miligram");
+                Console.WriteLine("24 = Microgram to pound");
+                Console.WriteLine("25 = Microgram to ounce");
+                Console.WriteLine("26 = Ounce to kilogram");
+                Console.WriteLine("27 = Ounce to gram");
+                Console.WriteLine("28 = Ounce to miligram");
+                Console.WriteLine("29 = Ounce to pound");
+                Console.WriteLine("30 = Ounce to grain");
+                Console.WriteLine("31 = Ounce to carat");
+                Console.WriteLine("32 = Pound to kilogram");
+                Console.WriteLine("33 = Pound to gram");
+                Console.WriteLine("34 = Pound to miligram");
+                Console.WriteLine("35 = Pound to microgram");
+                Console.WriteLine("36 = Pound to ounce");
+                Console.WriteLine("37 = Pound to stone");
+                Console.WriteLine("38 = Pound to tonne(metric ton)");
+                Console.WriteLine("39 = Stone to kilogram");
+                Console.WriteLine("40 = Stone to pound");
+                Console.WriteLine("41 = Tonne (metric ton) to kilogram");
+                Console.WriteLine("42 = Tonne (metric ton) to pound");
+                Console.WriteLine("43 = Grain to gram");
+                Console.WriteLine("45 = Grain to miligram");
+                Console.WriteLine("46 = Grain to ounce");
+                Console.WriteLine("47 = Carat to gram");
+                Console.WriteLine("48 = Carat to miligram");
+                Console.WriteLine("49 = Slug to kilogram\n");
+                Console.WriteLine("50 = Return back to main menu");
+                Console.WriteLine("51 = Exit\n");
+
+                int MenuChoice = Convert.ToInt16(Console.ReadLine());
+
+                if (MenuChoice == 51)
+                {
+                    Console.WriteLine("Exiting the application");
                 }
             }
         }
