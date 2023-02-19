@@ -297,6 +297,129 @@ namespace PracticeCalculator
                         ounce = metricton * 35274;
                         Console.WriteLine(ounce + "ounces");
                         break;
+
+                    case 25:
+                        Console.WriteLine("Enter the amount of metric tons");
+                        metricton = Convert.ToInt16(Console.ReadLine());
+                        gram = metricton * 1000000;
+                        Console.WriteLine(gram + "grams");
+                        break;
+
+                    case 26:
+                        Console.WriteLine("Enter the amount of metric tons");
+                        metricton = Convert.ToInt16(Console.ReadLine());
+                        carat = metricton * 5000000;
+                        Console.WriteLine(carat + "carats");
+                        break;
+
+                    case 27:
+                        Console.WriteLine("Enter the amount of carats");
+                        carat = Convert.ToInt16(Console.ReadLine());
+                        gram = carat * 0.2;
+                        Console.WriteLine(gram + "grams");
+                        break;
+
+                    case 28:
+                        Console.WriteLine("Enter the amount of carats");
+                        carat = Convert.ToInt16(Console.ReadLine());
+                        ounce = carat * 0.00705479239;
+                        Console.WriteLine(ounce + "ounces");
+                        break;
+
+                    case 29:
+                        Console.WriteLine("Enter the amount of carats");
+                        carat = Convert.ToInt16(Console.ReadLine());
+                        pound = carat * 0.000440924524;
+                        Console.WriteLine(pound + "pounds");
+                        break;
+
+                    case 30:
+                        Console.WriteLine("Enter the amount of carats");
+                        carat = Convert.ToInt16(Console.ReadLine());
+                        kilogram = carat * 0.00705479239;
+                        Console.WriteLine(kilogram + "kilograms");
+                        break;
+
+                    case 31:
+                        Console.WriteLine("Enter the amount of stones");
+                        stone = Convert.ToInt16(Console.ReadLine());
+                        pound = stone * 14;
+                        Console.WriteLine(pound + "pounds");
+                        break;
+
+                    case 32:
+                        Console.WriteLine("Enter the amount of stones");
+                        stone = Convert.ToInt16(Console.ReadLine());
+                        kilogram = stone * 6.35029;
+                        Console.WriteLine(kilogram + "kilograms");
+                        break;
+
+                    case 33:
+                        Console.WriteLine("Enter the amount of troy ounces");
+                        tryoounce = Convert.ToInt16(Console.ReadLine());
+                        gram = tryoounce * 31.1035;
+                        Console.WriteLine(gram + "grams");
+                        break;
+
+                    case 34:
+                        Console.WriteLine("Enter the amount of troy ounces");
+                        tryoounce = Convert.ToInt16(Console.ReadLine());
+                        ounce = tryoounce * 1.09714;
+                        Console.WriteLine(ounce + "ounces");
+                        break;
+
+                    case 35:
+                        Console.WriteLine("Enter the amount of troy ounces");
+                        tryoounce = Convert.ToInt16(Console.ReadLine());
+                        pound = tryoounce * 0.0685714;
+                        Console.WriteLine(pound + "pounds");
+                        break;
+
+                    case 36:
+                        Console.WriteLine("Enter the amount of pennyweights");
+                        pennyweight = Convert.ToInt16(Console.ReadLine());
+                        gram = pennyweight * 1.55517;
+                        Console.WriteLine(gram + "grams");
+                        break;
+
+                    case 37:
+                        Console.WriteLine("Enter the amount of pennyweights");
+                        pennyweight = Convert.ToInt16(Console.ReadLine());
+                        ounce = pennyweight * 0.05;
+                        Console.WriteLine(ounce + "ounces");
+                        break;
+
+                    case 38:
+                        Console.WriteLine("Enter the amount of pennyweights");
+                        pennyweight = Convert.ToInt16(Console.ReadLine());
+                        pound = pennyweight * 0.00390625;
+                        Console.WriteLine(pound + "pounds");
+                        break;
+
+                    case 39:
+                        Console.WriteLine("Enter the amount of tolas");
+                        tolas = Convert.ToInt16(Console.ReadLine());
+                        gram = tolas * 11.6638038;
+                        Console.WriteLine(gram + "grams");
+                        break;
+
+                    case 40:
+                        Console.WriteLine("Enter the amount of tolas");
+                        tolas = Convert.ToInt16(Console.ReadLine());
+                        ounce = tolas * 0.37593895;
+                        Console.WriteLine(ounce + "ounces");
+                        break;
+
+                    case 41:
+                        Console.WriteLine("Enter the amount of tolas");
+                        tolas = Convert.ToInt16(Console.ReadLine());
+                        pound = (tolas * 0.37593985) / 16;
+                        Console.WriteLine(pound + "pounds");
+                        break;
+
+                    case 42:
+                        MainMenu();
+                        break;
                 }
             }
         }
