@@ -513,6 +513,9 @@ namespace PracticeCalculator
                 {
                     case 1:
                     Console.WriteLine("Enter the amount of kilograms");
+                    kilogram = Convert.ToInt16(Console.ReadLine());
+                    gram = kilogram * 1000;
+                    Console.WriteLine(grams + "grams");
                     break;
                 }
             }
