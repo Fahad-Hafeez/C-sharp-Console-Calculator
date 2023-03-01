@@ -517,11 +517,19 @@ namespace PracticeCalculator
                     gram = kilogram * 1000;
                     Console.WriteLine(grams + "grams");
                     break;
+
                     case 2:
                     Console.WriteLine("Enter the amount of kilograms");
                     kilogram = Convert.ToInt16(Console.ReadLine());
                     miligram = kilogram * 1000000;
                     Console.WriteLine(miligram + "miligrams");
+                    break;
+                    
+                    case 3:
+                    Console.WriteLine("Enter the amount of kilograms");
+                    kilogram = Convert.ToInt16(Console.ReadLine());
+                    microgram = kilogram * 1000000000;
+                    Console.WriteLine(microgram + "micrograms");
                     break;
                 }
             }
