@@ -6,7 +6,7 @@ namespace PracticeCalculator
 {
     internal class Program
     {
-        public static void MainMenu()
+     public static void MainMenu()
         {
             Console.WriteLine("Welcome To The C# Calculator\n");
             Console.WriteLine("Choose one of the options below:\n");
@@ -51,6 +51,7 @@ namespace PracticeCalculator
                     break;
             }
         }
+
         public static void weight()
         {
             while (true)
@@ -506,6 +507,13 @@ namespace PracticeCalculator
                 if (MenuChoice == 51)
                 {
                     Console.WriteLine("Exiting the application");
+                }
+
+                switch(MenuChoice)
+                {
+                    case 1:
+                    Console.WriteLine("Enter the amount of kilograms");
+                    break;
                 }
             }
         }
