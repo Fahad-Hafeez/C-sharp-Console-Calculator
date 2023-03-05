@@ -531,6 +531,34 @@ namespace PracticeCalculator
                     microgram = kilogram * 1000000000;
                     Console.WriteLine(microgram + "micrograms");
                     break;
+
+                    case 4:
+                    Console.WriteLine("Enter the amount of kilograms");
+                    kilogram = Convert.ToInt16(Console.ReadLine());
+                    pound = kilogram * 2.20462;
+                    Console.WriteLine(pound + "pounds");
+                    break;
+
+                    case 5:
+                    Console.WriteLine("Enter the amount of kilograms");
+                    kilogram = Convert.ToInt16(Console.ReadLine());
+                    ounce = kilogram * 35.27396;
+                    Console.WriteLine(ounce + "ounces");
+                    break;
+
+                    case 6:
+                    Console.WriteLine("Enter the amount of kilograms");
+                    kilogram = Convert.ToInt16(Console.ReadLine());
+                    stone = kilogram * 0.157473;
+                    Console.WriteLine(stone + "stones");
+                    break;
+
+                    case 7:
+                    Console.WriteLine("Enter the amount of kilograms");
+                    kilogram = Convert.ToInt16(Console.ReadLine());
+                    tonne = kilogram * 0.001;
+                    Console.WriteLine(tonne + "tonnes");
+                    break;
                 }
             }
         }
