@@ -559,6 +559,13 @@ namespace PracticeCalculator
                     tonne = kilogram * 0.001;
                     Console.WriteLine(tonne + "tonnes");
                     break;
+
+                    case 7:
+                    Console.WriteLine("Enter the amount of grams");
+                    gram = Convert.ToInt16(Console.ReadLine());
+                    kilogram = gram / 1000;
+                    Console.WriteLine(kilogram + "kilograms");
+                    break;
                 }
             }
         }
