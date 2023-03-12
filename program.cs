@@ -931,6 +931,7 @@ namespace PracticeCalculator
         }
 
         public static void scientific()
+        
         {
             Console.WriteLine("Welcome To The Scientific Calculator!");
 
@@ -1143,6 +1144,10 @@ namespace PracticeCalculator
                 }
                 Console.WriteLine("The answer is: " + answer);
             }
+        }
+
+        public static void fibonacci()
+        {
         }
 
         static void Main(string[] args)
