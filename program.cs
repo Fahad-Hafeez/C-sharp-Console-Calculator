@@ -2,6 +2,8 @@ using System;
 using System.Linq.Expressions;
 using System.Net.Http;
 using System.Numerics;
+using System.Drawing;
+using System.Security.Cryptography;
 
 namespace PracticeCalculator
 {
